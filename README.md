@@ -1,4 +1,3 @@
-pyrecon
-=======
+# pyrecon
 
 Python configuration reading
