@@ -4,6 +4,10 @@
 #                                                                              #
 ################################################################################
 #                                                                              #
+# version: 2014-08-13T2328                                                     #
+#                                                                              #
+################################################################################
+#                                                                              #
 # LICENCE INFORMATION                                                          #
 #                                                                              #
 # This program provides configuration reading and parsing utilities in Python. #
