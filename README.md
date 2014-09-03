@@ -12,11 +12,13 @@ In order to facilitate the human-readability of configuration specifications, th
 
 Generally, pyrecon can be used in a way such as the following:
 
+    ```python
     # Import pyrecon.
     import pyrecon as pyrecon
     # Specify the configuration file.
     configurationFileName = "configuration.md"
     # Load the configuration specified in a configuration file to a Python dictionary.
     configuration = pyrecon.openConfiguration(configurationFileName)
+    ```
 
 The configuration dictionary then is usable with intelligence specified elsewhere in code.
