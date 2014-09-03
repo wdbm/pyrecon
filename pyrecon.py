@@ -4,7 +4,7 @@
 #                                                                              #
 ################################################################################
 #                                                                              #
-# version: 2014-08-13T2328                                                     #
+# version: 2014-09-03T1509                                                     #
 #                                                                              #
 ################################################################################
 #                                                                              #
@@ -50,3 +50,7 @@ def MarkdownListToDictionary(MarkdownList):
             stack.append(stack[-1][name])
         depth = indent
     return stack[0]
+
+def openConfiguration(fileName):
+    configurationFile = open(fileName, "r").read()
+    return MarkdownListToDictionary(configurationFile)
