@@ -24,7 +24,7 @@
 #                                                                              #
 # This program is distributed in the hope that it will be useful, but WITHOUT  #
 # ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or        #
-# FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for    #
+# FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for     #
 # more details.                                                                #
 #                                                                              #
 # For a copy of the GNU General Public License, see                            #
@@ -49,8 +49,8 @@ def MarkdownListToDictionary(MarkdownList):
             # new branch
             stack.append(stack[-1][name])
         depth = indent
-    return stack[0]
+    return(stack[0])
 
 def openConfiguration(fileName):
     configurationFile = open(fileName, "r").read()
-    return MarkdownListToDictionary(configurationFile)
+    return(MarkdownListToDictionary(configurationFile))
