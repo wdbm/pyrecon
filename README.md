@@ -14,11 +14,11 @@ Generally, pyrecon can be used in a way such as the following:
 
 ```python
 # Import pyrecon.
-import pyrecon as pyrecon
+import pyrecon
 # Specify the configuration file.
-configurationFileName = "configuration.md"
+configuration_filename = "configuration.md"
 # Load the configuration specified in a configuration file to a Python dictionary.
-configuration = pyrecon.openConfiguration(configurationFileName)
+configuration = pyrecon.open_configuration(configuration_filename)
 ```
 
 The configuration dictionary then is usable with intelligence specified elsewhere in code.

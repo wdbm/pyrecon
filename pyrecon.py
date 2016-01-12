@@ -28,16 +28,16 @@
 #                                                                              #
 ################################################################################
 
-version = "2015-12-01T0114Z"
+version = "2016-01-12T1811Z"
 
 import re
 from collections import OrderedDict
 
-def MarkdownListToDictionary(MarkdownList):
+def Markdown_list_to_dictionary(Markdown_list):
     line = re.compile(r"( *)- ([^:\n]+)(?:: ([^\n]*))?\n?")
     depth = 0
     stack = [{}]
-    for indent, name, value in line.findall(MarkdownList):
+    for indent, name, value in line.findall(Markdown_list):
         indent = len(indent)
         if indent > depth:
             assert not stack[-1], "unexpected indent"
@@ -67,9 +67,9 @@ def Markdown_list_to_OrderedDict(Markdown_list = None):
         depth = indent
     return stack[0]
 
-def openConfiguration(fileName):
-    configurationFile = open(fileName, "r").read()
-    return(MarkdownListToDictionary(configurationFile))
+def open_configuration(filename):
+    configuration_file = open(filename, "r").read()
+    return(Markdown_list_to_dictionary(configuration_file))
 
 def open_configuration(filename = None):
     configuration_file = open(filename, "r").read()

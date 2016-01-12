@@ -19,7 +19,7 @@ def main():
     # The configuration file is directly opened and converted from the Markdown
     # format to a dictionary.
     print("\nconfiguration loaded and converted from Markdown list to dictionary:\n")
-    configuration = pyrecon.openConfiguration(configuration_filename)
+    configuration = pyrecon.open_configuration(configuration_filename)
     print(str(configuration) + "\n")
 
     # The configuration file is directly opened and converted from the Markdown

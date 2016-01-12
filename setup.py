@@ -8,7 +8,7 @@ def main():
 
     setuptools.setup(
         name             = "pyrecon",
-        version          = "2015.12.01.0114",
+        version          = "2016.01.12.1811",
         description      = "Python configuration reading",
         long_description = Markdown_to_reStructuredText("README.md"),
         url              = "https://github.com/wdbm/pyrecon",

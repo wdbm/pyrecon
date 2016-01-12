@@ -3,10 +3,10 @@ This is an example configuration file. The configuration specification is as fol
 - launchers
    - say hello
       - command: echo "hello" | festival --tts
-      - icon: sayHello.png
+      - icon: say_hello.png
    - say world
       - command: echo "world" | festival --tts
-      - icon: sayWorld.png
+      - icon: say_world.png
    - wait
       - command: for ((x = 0; x < 10; ++x)); do :; done
       - icon: wait.png
